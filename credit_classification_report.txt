@@ -1,0 +1,28 @@
+Overview
+
+The purpose of this analysis was to develop machine learning models for a credit risk classification. The goal was to predict if a loan is high-risk (1) or healthy (0) based on the financial information provided. The data used in this analysis is financial information related to loans. The target variable is the "loan_status" column, with values 1 representing high-risk loans and 0 representing healthy loans.Logistic regression was used, but there appeared to be a bias towards healthy loans so the data was resampled and analysis was conducted again. The steps of the machine learning process are listed below. 
+
+Machine Learning Process
+-Read data from lending_data.csv.
+-Split data into training and testing sets.
+-Created labels (y) and features (X) for models.
+-Logistic Regression done with original data.
+-Addressed class imbalance by oversampling the training data using the RandomOverSampler function.
+-Fit a logistic regression model for the resampled data.
+-Evaluated the models' performances by generating classification report.
+
+Results
+Model 1: Original Data
+Balanced Accuracy Score: High (0.99)
+Precision and Recall Scores:
+Healthy Loans (0): High precision, recall, and F1-scores.
+High-Risk Loans (1): Slightly lower but still strong precision, recall, and F1-scores.
+
+Model 2: Resampled Data
+Balanced Accuracy Score: High (0.99)
+Precision and Recall Scores:
+Healthy Loans (0): High precision, recall, and F1-scores.
+High-Risk Loans (1): Similar to Model 1, slightly lower but still strong precision, recall, and F1-scores.
+
+Summary
+Both models performed well, but the logistic regression model with resampled data slightly improved performance on high-risk loans. Given the small difference in results, either model is could be selected for a credit risk classification. Both models effectively handle imbalanced data and demonstrate high accuracy and precision for both loan types.
