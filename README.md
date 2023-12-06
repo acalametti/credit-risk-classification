@@ -18,18 +18,17 @@ The goal of this project is to perform a credit risk classification using logist
 
 ### Part 1: Split the Data into Training and Testing Sets
 
-1. Read the `lending_data.csv` data from the `Resources` folder into a Pandas DataFrame.
+1. Read in the `lending_data.csv` from the `Resources` folder and creat a DataFrame.
 2. Create labels set (`y`) and features DataFrame (`X`).
-3. Check the balance of the labels variable (`y`).
-4. Split the data into training and testing datasets using `train_test_split`.
+3. Split the data into training and testing datasets using `train_test_split`.
 
-### Part 2: Create a Logistic Regression Model with the Original Data
+### Part 2: Logistic Regression Model with the Original Data
 
 1. Fit a logistic regression model using the training data (`X_train` and `y_train`).
 2. Save predictions on the testing data labels using the fitted model.
 3. Evaluate the model’s performance by calculating accuracy, generating a confusion matrix, and printing the classification report.
 
-### Part 3: Predict a Logistic Regression Model with Resampled Training Data
+### Part 3: Logistic Regression Model with Resampled Training Data
 
 1. Use the `RandomOverSampler` to resample the data for balanced labels.
 2. Fit a logistic regression model using the resampled training data.
